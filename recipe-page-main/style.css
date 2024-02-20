@@ -1,7 +1,149 @@
+/* global */
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+/* root */
+:root {
+/* primary colors */
+--primary-nutmeg: hsl(14, 45%, 36%);
+--primary-raspberry: hsl(332, 51%, 32%);
+/* neutral colors */
+--neutral-white: hsl(0, 0%, 100%);
+--neutral-rose: hsl(330, 100%, 98%);
+--neutral-eggshell: hsl(30, 54%, 90%);
+--neutral-grey: hsl(30, 18%, 87%);
+--neutral-brown: hsl(30, 10%, 34%);
+--neutral-charcoal: hsl(24, 5%, 18%);
+
+/* font */
+--heading-font: 'Young Serif', sans-serif;
+--main-font: 'Outfit', sans-serif;
+
+
+/* font sizes */
+--font16: 1rem;
+--font21: 1.313rem;
+--font36: 2.25rem;
+--font46: 2.875rem;
+
+/* font weight */
+--normal-weight: 400;
+--heavy-weight: 600;
+--heavier-weight: 700;
+
+}
+
+/* wrapper */
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* style classes */
+
+/* paragraphs */
+
+p {
+  font-size: var(--font16);
+  font-family: var(--main-font);
+}
+
+.paragraph-heavy {
+  font-weight: var(--heavy-weight);
+}
+
+
+
+/* descriptive paragraph */
+.descriptive-paragraph {
+  font-size: var(--font21);
+  font-weight: var(--heavier-weight);
+  color: var(--primary-raspberry);
+}
+
+.nutrition-details .descriptive-paragraph {
+  color: var(--primary-nutmeg);
+}
+
+/* headings */
+.heading-one {
+  font-family: var(--heading-font);
+  font-size: var(--font46);
+  font-weight: var(--normal-weight);
+}
+
+.heading-two {
+font-family: var(--heading-font);
+font-size: var(--font36);
+color: var(--primary-nutmeg);
+font-weight: var(--normal-weight);
+}
+
+
+/* header */
+
+
+
+/* preparation */
+.preparation-section {
+  background-color: var(--neutral-rose);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+/* nutrition section */
+
+.nutrition-details {
+  margin-bottom: 0;
+  margin-top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: baseline;
+
+}
+
+/* footer */
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+
+@media screen and (min-width: 1025px) {
+body {
+  background-color: var(--neutral-eggshell);
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1440px;
+  }
+ .card {
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 80%;
+  padding: 40px;
+  background-color: var(--neutral-white);
+  border-radius: 10px;
+ } 
 }
