@@ -12,14 +12,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="normalize.css">
-
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css" />
     <title>Frontend Mentor | Recipe page</title>
   </head>
   <body>
-    <div class="card">
-    <section class="hero-section wrapper">
+    <main role="main">
+    <section class="card wrapper">
+    <div class="hero-section wrapper">
     <!-- Hero section -->
     <!-- img -->
     <img src="/assets/images/image-omelette.jpeg" class="hero-image" alt="an omelette">
@@ -31,7 +31,8 @@
     beaten eggs cooked to perfection, optionally filled with your choice of
     cheese, vegetables, or meats.
   </p>
-    </section>
+    </div>
+  
     <!-- end hero section -->
 
     <!-- section preparation -->
@@ -125,7 +126,10 @@
    
       <!-- end nutrition section -->
 </section>
+</main>
+
     <!-- section footer -->
+    <footer role="footer">
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
@@ -134,5 +138,6 @@
     </div>
     <!-- end footer section -->
   </div>
+</footer>
   </body>
 </html>
