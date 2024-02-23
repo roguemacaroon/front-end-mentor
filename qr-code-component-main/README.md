@@ -18,8 +18,8 @@ This newbie challenge is a test of CSS Flexbox skills. The challenge was to buil
 
 ### Screenshot
 
-![](/images/mobile-preview.jpg) 
-![](/images/desktop-preview.jpg)
+![](/images/mobile-preview.jpg?raw=true) 
+![](/images/desktop-preview.jpg?raw=true)
 
 
 ## My process
