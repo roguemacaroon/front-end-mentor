@@ -1,0 +1,132 @@
+/* variables */
+:root {
+/* colors */
+--primary-white: hsl(0, 0%, 100%);
+--primary-grey: hsl(212, 45%, 89%);
+--primary-grey-blue: hsl(220, 15%, 55%);
+--primary-dark-blue: hsl(218, 44%, 22%);
+--primary-links: hsl(228, 45%, 44%);
+
+/* font size */
+--font11: 0.688rem;
+--font15: 0.938rem;
+--font22: 1.375rem;
+
+/* font family */
+--main-font: 'Outfit';
+
+/* font weight */
+--regular-weight: 400;
+--heavy-weight: 700;
+
+/* spacing */
+--spacing10: 10px;
+--spacing20: 20px;
+
+}
+
+/* html */
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: var(--primary-grey);
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+/* wrapper */
+.wrapper {
+    width: 80%;
+    max-width: 375px;
+    margin: 0 auto;
+}
+
+/* Images */
+  img {
+    max-width: 100%;
+    display: block;
+  }
+
+/* font styles */
+.heading-one {
+    margin-bottom: 0;
+    font-size: var(--font22);
+    font-family: var(--main-font);
+    font-weight: var(--heavy-weight);
+    color: var(--primary-dark-blue);
+}
+
+p {
+    font-size: var(--font15);
+    font-family: var(--main-font);
+    font-weight: var(--regular-weight);
+    color: var(--primary-grey-blue);
+}
+
+/* section */
+.qr-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* qr card */
+.qr-card {
+    background-color: var(--primary-white);
+    border-radius: var(--spacing20);
+    padding: var(--spacing10);
+    max-width: 375px;
+}
+
+/* qr code image */
+.qr-code-img img{
+    padding: var(--spacing10);
+    border-radius: var(--spacing20);
+}
+
+/* h1 */
+.hero-heading {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* p */
+.hero-paragraph {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px 10px 10px;
+}
+
+/* footer */
+  .attribution { 
+    text-align: center; 
+    font-size: var(--font11); 
+    margin-top: var(--spacing10);
+}
+  .attribution a { 
+    color: var(--primary-links); 
+}
+
+/* media queries to maintain proper sizing */
+@media only screen and (min-width: 425px) {
+.hero-heading {
+    margin: 0 auto;
+    max-width: 80%;
+}    
+
+.hero-paragraph {
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+}

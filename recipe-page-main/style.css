@@ -32,6 +32,7 @@ html {
 /* font sizes */
 --font16: 1rem;
 --font21: 1.313rem;
+--font32: 2rem;
 --font36: 2.25rem;
 --font46: 2.875rem;
 
@@ -42,15 +43,19 @@ html {
 
 }
 
+li {
+  padding: 0.5em;
+}
+
 /* wrapper */
 .wrapper {
-  width: 80%;
+  width: 87%;
   margin: 0 auto;
 }
 
 /* Images */
 img {
-  max-width: 100%;
+  width: 100%;
   display: block;
 }
 
@@ -76,6 +81,12 @@ p {
   color: var(--primary-raspberry);
 }
 
+ul .descriptive-paragraph {
+  display: flex;
+  
+
+}
+
 .nutrition-details .descriptive-paragraph {
   color: var(--primary-nutmeg);
 }
@@ -83,27 +94,69 @@ p {
 /* headings */
 .heading-one {
   font-family: var(--heading-font);
-  font-size: var(--font46);
+  font-size: var(--font32);
   font-weight: var(--normal-weight);
 }
 
 .heading-two {
+margin-bottom: 0;
 font-family: var(--heading-font);
-font-size: var(--font36);
+font-size: var(--font32);
 color: var(--primary-nutmeg);
 font-weight: var(--normal-weight);
 }
 
 
+
+
+hr {
+  background-color: var(--neutral-grey);
+  height: 1px;
+  border: none;
+}
+
 /* header */
-
-
 
 /* preparation */
 .preparation-section {
   background-color: var(--neutral-rose);
-  padding: 20px;
+  padding: 10px 20px 10px 20px;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  font-family: var(--main-font);
+  
+}
+
+.preparation-section .descriptive-paragraph{
+  margin-bottom: 0;
+  margin-left: 10px;
+  
+}
+
+
+/* ingredients */
+.ingredients-list li{
+  padding: 5px;
+  font-family: var(--main-font);
+
+}
+
+/* instructions */
+ol {
+  display: flex;
+  flex-direction: column;
+   
+    
+  }
+
+ol li::marker {
+  font-family: var(--main-font);
+  color: var(--primary-nutmeg);
+  font-weight: 700;
+  
+ 
 }
 
 
