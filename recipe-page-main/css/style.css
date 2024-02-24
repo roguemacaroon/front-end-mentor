@@ -30,6 +30,7 @@ html {
   /* font sizes */
   --font16: 1rem;
   --font21: 1.313rem;
+  --font26: 1.625rem;
   --font32: 2rem;
   --font36: 2.25rem;
   --font46: 2.875rem;
@@ -38,10 +39,18 @@ html {
   --normal-weight: 400;
   --heavy-weight: 600;
   --heavier-weight: 700;
+
+  /* spacing */
+  --spacing5: 5px;
+  --spacing10: 10px;
+  --spacing15: 15px;
+  --spacing20: 20px;
+  --spacing30: 30px;
+  --spacing40: 40px;
 }
 
 li {
-  padding: 0.5em;
+  padding: 8px;
   color: var(--neutral-brown);
 }
 
@@ -58,9 +67,7 @@ img {
 }
 
 /* style classes */
-
 /* paragraphs */
-
 p {
   font-size: var(--font16);
   font-family: var(--main-font);
@@ -84,6 +91,7 @@ ul .descriptive-paragraph {
 
 .nutrition-details .descriptive-paragraph {
   color: var(--primary-nutmeg);
+  font-size: var(--font16);
 }
 
 /* headings */
@@ -96,20 +104,17 @@ ul .descriptive-paragraph {
 .heading-two {
   margin-bottom: 0;
   font-family: var(--heading-font);
-  font-size: var(--font32);
+  font-size: var(--font26);
   color: var(--primary-nutmeg);
   font-weight: var(--normal-weight);
 }
 
 /* hr styles */
-
 hr {
   background-color: var(--neutral-grey);
   height: 1px;
   border: none;
 }
-
-/* header */
 
 /* preparation */
 .preparation-section {
@@ -118,18 +123,18 @@ hr {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  margin: 15px;
+  margin: var(--spacing15);
   font-family: var(--main-font);
 }
 
 .preparation-section .descriptive-paragraph {
   margin-bottom: 0;
-  margin-left: 10px;
+  margin-left: var(--spacing10);
 }
 
 /* ingredients */
 .ingredients-list li {
-  padding: 5px;
+  padding: var(--spacing5);
   font-family: var(--main-font);
 }
 
@@ -148,24 +153,28 @@ ol {
 ol li::marker {
   font-family: var(--main-font);
   color: var(--primary-nutmeg);
-  font-weight: 700;
+  font-weight: var(--heavier-weight);
 }
 
 /* nutrition section */
-
 .nutrition-details {
-  margin-bottom: 0;
-  margin-top: 0;
+  margin: 0 80px 0 20px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-start;
+  max-width: 60%;
 }
 .nutrition-details p {
   margin-top: 0;
-  margin-bottom: 0;
+  text-align: center;
+  
 }
 /* footer */
+
+footer {
+  margin-top: var(--spacing10);
+}
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -174,21 +183,47 @@ ol li::marker {
   color: hsl(228, 45%, 44%);
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 875px) {
   body {
     background-color: var(--neutral-eggshell);
   }
-
+  
   .wrapper {
     width: 90%;
-    max-width: 1440px;
+    max-width: 1000px;
   }
+
+  /* card only visible after media query */
   .card {
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: var(--spacing40);
     width: 60%;
-    padding: 40px;
+    padding: var(--spacing30);
     background-color: var(--neutral-white);
-    border-radius: 10px;
+    border-radius: var(--spacing10);
+    max-width: 1000px;
   }
+
+  .card img {
+    width: 90%;
+    max-width: 1000px;
+    border-radius: var(--spacing20);
+    margin: 0 auto;
+  }
+/* adjusting margins for nutrition details */
+  .nutrition-details {
+    margin: 0 80px 0 30px;
+     max-width: 50%;
+   }
+}
+@media screen and (min-width: 976px) {
+  /* increase heading size */
+  .heading-one {
+    font-size: var(--font36);
+  }
+
+  .heading-two {
+    font-size: var(--font32);
+  }
+
 }
