@@ -160,7 +160,7 @@ ol li::marker {
 .nutrition-details {
   display: grid;
 	grid-template-columns: 50% 50%;
-	padding: 10px 0;
+	padding: 10px 35px;
 	border-bottom: 1px solid var(--neutral-grey);
 }
 .nutrition-details p {
