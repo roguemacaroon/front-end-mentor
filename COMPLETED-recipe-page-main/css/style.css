@@ -158,16 +158,13 @@ ol li::marker {
 
 /* nutrition section */
 .nutrition-details {
-  margin: 0 80px 0 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  max-width: 60%;
+  display: grid;
+	grid-template-columns: 50% 50%;
+	padding: 10px 0;
+	border-bottom: 1px solid var(--neutral-grey);
 }
 .nutrition-details p {
-  margin-top: 0;
-  text-align: center;
+  margin: 0;
   
 }
 /* footer */
@@ -193,7 +190,7 @@ footer {
     max-width: 1000px;
   }
 
-  /* card only visible after media query */
+  /* card is only visible after media query */
   .card {
     margin: 0 auto;
     margin-top: var(--spacing40);
@@ -210,11 +207,7 @@ footer {
     border-radius: var(--spacing20);
     margin: 0 auto;
   }
-/* adjusting margins for nutrition details */
-  .nutrition-details {
-    margin: 0 80px 0 30px;
-     max-width: 50%;
-   }
+
 }
 @media screen and (min-width: 976px) {
   /* increase heading size */
