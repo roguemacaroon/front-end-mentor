@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+
+:root {
+  /* primary colors */
+  --purple: hsl(259, 100%, 65%);
+  --light-red: hsl(0, 100%, 67%);
+  --link-blue: hsl(228, 45%, 44%);
+
+  /* neutral colors */
+  --white: hsl(0, 0%, 100%);
+  --off-white: hsl(0, 0%, 94%);
+  --light-grey: hsl(0, 0%, 86%);
+  --smokey-grey: hsl(0, 1%, 44%);
+  --off-black: hsl(0, 0%, 8%);
+
+  /* font size */
+  --font11: 0.688rem;
+  --font12: 0.75rem;
+  --font16: 1rem;
+  --font32: 2rem;
+  --font70: 4.375rem;
+
+  /* font family */
+  --main-font: "Poppins", "sans-serif";
+
+  /* font weight */
+  --weight400: 400;
+  --weight700: 700;
+  --weight800: 800;
+
+  /* spacing */
+  --space10: 10px;
+  --space15: 15px;
+  --space20: 20px;
+  --space35: 35px;
+  --space40: 40px;
+  --space50: 50px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--light-grey);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: var(--main-font);
+}
+
+/* calc tile */
+.calc-tile {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px 20px 70px 20px;
+  position: relative;
+  background-color: var(--white);
+  padding: var(--space20);
+}
+
+/*  */
+.calc-input {
+  display: flex;
+  text-transform: uppercase;
+  margin-bottom: var(--space40);
+  margin-top: var(--space40);
+}
+
+.calc-input p {
+  color: var(--smokey-grey);
+  font-size: var(--font12);
+}
+
+p.error {
+  font-style: italic;
+  margin: 5px 0;
+  color: var(--light-red);
+}
+
+input {
+  width: 80px;
+  outline: none;
+  font-size: var(--font16);
+  font-family: var(--main-font);
+  color: var(--off-black);
+  font-weight: var(--weight700);
+  padding: var(--space10);
+  margin-right: var(--space10);
+  border: 0.5px solid var(--light-grey);
+  caret-color: var(--purple);
+}
+
+input:focus {
+  outline: none;
+  border: 0.5px solid var(--purple);
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: var(--light-grey);
+}
+
+button {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-top: 120px;
+  right: 130px;
+  background: var(--purple);
+}
+
+button img {
+  width: 50%;
+}
+
+button:hover {
+  background: var(--off-black);
+}
+
+span {
+  color: var(--purple);
+}
+
+.calc-complete {
+  display: flex;
+  flex-direction: column;
+  font-style: italic;
+  line-height: 1.2;
+  font-weight: var(--weight800);
+  margin-top: var(--space40);
+}
+
+/* footer */
+.attribution {
+  text-align: center;
+  font-size: var(--font11);
+}
+.attribution a {
+  color: var(--link-blue);
+}
+
+@media only screen and (min-width: 710px) {
+  .wrapper {
+    width: 90%;
+    max-width: 720px;
+  }
+
+  hr {
+    width: 90%;
+  }
+
+  .calc-tile {
+    padding: 10px 50px 30px 50px;
+    border-bottom-right-radius: 130px;
+  }
+  .calc-input {
+    margin-bottom: var(--space35);
+  }
+
+  input {
+    width: 150px;
+    border-radius: 10px;
+    padding: var(--space10);
+    margin-top: var(--space10);
+    margin-right: var(--space20);
+    font-size: var(--font32);
+    caret-color: var(--purple);
+  }
+  button {
+    width: 65px;
+    height: 65px;
+    margin-top: 135px;
+    right: var(--space40);
+  }
+
+  h1 {
+    font-size: var(--font70);
+    font-weight: var(--weight800);
+  }
+}
