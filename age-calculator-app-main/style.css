@@ -75,7 +75,6 @@ body {
 .calc-input {
   display: flex;
   text-transform: uppercase;
-  margin-bottom: var(--space40);
   margin-top: var(--space40);
 }
 
@@ -84,15 +83,24 @@ body {
   font-size: var(--font12);
 }
 
-p.error {
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.error {
   font-style: italic;
+  font-size: 12px;
   margin: 5px 0;
+  text-transform: capitalize;
   color: var(--light-red);
 }
 
 input {
   width: 80px;
   outline: none;
+  border-radius: 5px;
   font-size: var(--font16);
   font-family: var(--main-font);
   color: var(--off-black);
@@ -122,8 +130,8 @@ button {
   border: none;
   outline: none;
   cursor: pointer;
-  margin-top: 120px;
-  right: 130px;
+  margin-top: 110px;
+  right: 132px;
   background: var(--purple);
 }
 
@@ -157,7 +165,7 @@ span {
   color: var(--link-blue);
 }
 
-@media only screen and (min-width: 710px) {
+@media only screen and (min-width: 740px) {
   .wrapper {
     width: 90%;
     max-width: 720px;
@@ -187,8 +195,8 @@ span {
   button {
     width: 65px;
     height: 65px;
-    margin-top: 135px;
-    right: var(--space40);
+    margin-top: 168px;
+    right: 50px;
   }
 
   h1 {
