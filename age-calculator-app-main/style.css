@@ -78,7 +78,7 @@ body {
   margin-top: var(--space40);
 }
 
-.calc-input p {
+.input-title {
   color: var(--smokey-grey);
   font-size: var(--font12);
 }
@@ -86,15 +86,31 @@ body {
 .input-container {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
+  margin-bottom: var(--space20);
 }
 
 .error {
   font-style: italic;
-  font-size: 12px;
+  font-size: 8px;
   margin: 5px 0;
-  text-transform: capitalize;
+  text-transform: initial;
   color: var(--light-red);
+}
+
+.error-title {
+  color: var(--light-red);
+}
+
+.error-input {
+  border: 0.5px solid var(--light-red);
+  caret-color: var(--light-red);
+  outline: none;
+}
+
+.error-input:focus {
+  border: 0.5px solid var(--light-red);
+  caret-color: var(--light-red);
+  outline: none;
 }
 
 input {
@@ -183,14 +199,21 @@ span {
     margin-bottom: var(--space35);
   }
 
+  .error {
+    font-size: var(--font16);
+  }
   input {
     width: 150px;
-    border-radius: 10px;
+    border-radius: var(--space10);
     padding: var(--space10);
     margin-top: var(--space10);
     margin-right: var(--space20);
     font-size: var(--font32);
     caret-color: var(--purple);
+  }
+
+  .input-title {
+    font-size: var(--font16);
   }
   button {
     width: 65px;
